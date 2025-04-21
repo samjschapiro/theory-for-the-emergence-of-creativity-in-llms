@@ -1,1 +1,153 @@
 # algorithmic-creativity
+
+Code and data of our paper:<br>
+**Title** <br>
+Vaishnavh Nagarajan*<sup>1</sup>, Chen Henry Wu*<sup>2</sup>, Charles Ding<sup>2</sup>, Aditi Raghunathan<sup>2</sup><br>
+<sup>1</sup>Google Research, <sup>2</sup>Carnegie Mellon University <br>
+_Preprint 2025_
+
+<div align=center>
+    <img src="docs/teaser.png" align="middle">
+</div>
+<br>
+
+Check out [our paper](TODO) for more details!
+
+## Code structure
+
+```text
+sibling-discovery        # code for Sibling Discovery
+├── ntp                      # with next-token training
+├── teacherless              # with teacherless training
+└── diffusion                # with diffusion training
+triangle-discovery       # code for Triangle Discovery
+├── ...
+circle-construction      # code for Circle Construction
+├── ...
+line-construction        # code for Line Construction
+├── ...
+simpletransformers       # helper code for Transformer models
+```
+
+## Setup
+
+We use `simpletransformers` to train and test the Transformer models (for NTP and teacherless training).
+To set up, please follow the installation instructions in `simpletransformers/README.md`.
+
+For diffusion model training and inference, we use [Score-Entropy-Discrete-Diffusion](https://github.com/louaaron/Score-Entropy-Discrete-Diffusion). We have provided self-contained copies under `{task}/diffusion/`, so no need to clone the repo. Please follow the dependency installation instructions in their README.
+
+All experiments can be run on a single A6000 GPU. Batch sizes are tuned on this device.
+
+## Data generation
+
+We provide Jupyter notebooks to replicate the data generation process. Paths in the notebooks need to be adjusted to your local environment.
+
+### Sibling Discovery
+
+To get data with hash-conditioning, run all blocks in:
+
+`sibling-discovery/ntp/sibling.ipynb`
+
+To get data without hash-conditioning, run all blocks in:
+
+`sibling-discovery/ntp/sibling_no_hash.ipynb`
+
+### Triangle Discovery
+
+To get data with hash-conditioning, run all blocks in:
+
+`triangle-discovery/ntp/triangle.ipynb`
+
+To get data without hash-conditioning, run all blocks in:
+
+`triangle-discovery/ntp/triangle_no_hash.ipynb`
+
+### Circle Construction
+
+To get both data with and without hash-conditioning, run all blocks in:
+
+`circle-construction/ntp/circle.ipynb`
+
+### Line Construction
+
+To get both data with and without hash-conditioning, run all blocks in:
+
+`line-construction/ntp/line.ipynb`
+
+## Training and evaluation
+
+<b>Note:</b> we have experiments with both Gemma 2B and GPT-2/SEDD in the paper, while this repo only contains the GPT-2/SEDD code.
+
+### Next-token prediction
+
+Working directory for NTP is `{task}/ntp`:
+
+```bash
+cd {task}/ntp
+```
+
+Run the training script:
+
+```bash
+bash run_train.sh
+```
+
+Run the evaluation script:
+
+```bash
+bash run_eval.sh
+```
+
+The evaluation script will print the scores for each saved checkpoint.
+
+### Teacherless training
+
+Working directory for teacherless training is `{task}/teacherless`:
+
+```bash
+cd {task}/teacherless
+```
+
+We provide Jupyter notebooks to preprocess the dataset for teacherless training. Run all blocks in (adjust the paths in the notebook to your local environment):
+
+`{task}_hybrid.ipynb`
+
+Run the training script:
+
+```bash
+bash run_train.sh
+```
+
+Run the evaluation script:
+
+```bash
+bash run_eval.sh
+```
+
+### Diffusion models
+
+Working directory for diffusion models should be `{task}/diffusion`:
+
+```bash
+cd {task}/diffusion
+```
+
+Run the training script:
+
+```bash
+bash run_train.sh
+```
+
+Run the evaluation script:
+
+```bash
+bash run_eval.sh
+```
+
+## Citation
+
+If you find this code useful, please consider citing our paper:
+
+```bibtex
+TODO
+```

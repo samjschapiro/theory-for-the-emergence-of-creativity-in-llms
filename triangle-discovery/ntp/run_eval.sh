@@ -1,0 +1,1 @@
+bash eval.sh triangle.10 0.0 12
