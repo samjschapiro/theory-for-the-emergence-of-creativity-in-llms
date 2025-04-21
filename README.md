@@ -78,6 +78,8 @@ To get both data with and without hash-conditioning, run all blocks in:
 
 <b>Note:</b> we have experiments with both Gemma 2B and GPT-2/SEDD in the paper, while this repo only contains the GPT-2/SEDD code.
 
+To run the experiments, replace `{task}` with `sibling-discovery`, `triangle-discovery`, `circle-construction`, or `line-construction`. All experiments can be run on a single A6000 GPU. Batch sizes are tuned on this device.
+
 ### Next-token prediction
 
 Working directory for NTP is `{task}/ntp`:
@@ -124,6 +126,8 @@ Run the evaluation script:
 bash run_eval.sh
 ```
 
+The evaluation script will print the scores for each saved checkpoint.
+
 ### Diffusion models
 
 Working directory for diffusion models should be `{task}/diffusion`:
@@ -143,6 +147,8 @@ Run the evaluation script:
 ```bash
 bash run_eval.sh
 ```
+
+The evaluation script will print the scores for each saved checkpoint.
 
 ## Citation
 
