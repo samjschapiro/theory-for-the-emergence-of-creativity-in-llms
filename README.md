@@ -1,7 +1,7 @@
 # algorithmic-creativity
 
 Code and data of our paper:<br>
-**Title** <br>
+**Roll the dice & look before you leap: Going beyond the creative limits of next-token prediction** <br>
 Vaishnavh Nagarajan*<sup>1</sup>, Chen Henry Wu*<sup>2</sup>, Charles Ding<sup>2</sup>, Aditi Raghunathan<sup>2</sup><br>
 <sup>1</sup>Google Research, <sup>2</sup>Carnegie Mellon University <br>
 _Preprint 2025_
@@ -11,7 +11,7 @@ _Preprint 2025_
 </div>
 <br>
 
-Check out [our paper](TODO) for more details!
+Check out [our paper](https://arxiv.org/abs/2504.15266) for more details!
 
 <b>Note:</b> we have experiments with both Gemma 2B and GPT-2/SEDD in the paper, while this repo only contains the GPT-2/SEDD code.
 
@@ -155,5 +155,12 @@ The evaluation script will print the scores for each saved checkpoint.
 If you find this code useful, please consider citing our paper:
 
 ```bibtex
-TODO
+@misc{nagarajan2025roll,
+    title={Roll the dice & look before you leap: Going beyond the creative limits of next-token prediction},
+    author={Vaishnavh Nagarajan and Chen Henry Wu and Charles Ding and Aditi Raghunathan},
+    year={2025},
+    eprint={2504.15266},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+}
 ```
