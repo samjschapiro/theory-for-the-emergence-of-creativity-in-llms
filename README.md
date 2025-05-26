@@ -6,12 +6,12 @@ Vaishnavh Nagarajan*<sup>1</sup>, Chen Henry Wu*<sup>2</sup>, Charles Ding<sup>2
 <sup>1</sup>Google Research, <sup>2</sup>Carnegie Mellon University <br>
 _ICML 2025 (spotlight)_
 
+[**Paper**](https://arxiv.org/abs/2504.15266) | [**Data examples**](https://huggingface.co/collections/ChenWu98/algorithmic-creativity-6834c1b60ee58242df9da20c)
+
 <div align=center>
     <img src="docs/teaser.png" align="middle">
 </div>
 <br>
-
-Check out [our paper](https://arxiv.org/abs/2504.15266) for more details!
 
 <b>Note:</b> we have experiments with both Gemma 2B and GPT-2/SEDD in the paper, while this repo only contains the GPT-2/SEDD code.
 
