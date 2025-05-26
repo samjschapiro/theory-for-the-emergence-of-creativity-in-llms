@@ -4,9 +4,9 @@ Code and data of our paper:<br>
 **Roll the dice & look before you leap: Going beyond the creative limits of next-token prediction** <br>
 Vaishnavh Nagarajan*<sup>1</sup>, Chen Henry Wu*<sup>2</sup>, Charles Ding<sup>2</sup>, Aditi Raghunathan<sup>2</sup><br>
 <sup>1</sup>Google Research, <sup>2</sup>Carnegie Mellon University <br>
-_ICML 2025 (spotlight)_
-
+_ICML 2025 (spotlight)_ <br>
 [**Paper**](https://arxiv.org/abs/2504.15266) | [**Data examples**](https://huggingface.co/collections/ChenWu98/algorithmic-creativity-6834c1b60ee58242df9da20c)
+
 
 <div align=center>
     <img src="docs/teaser.png" align="middle">
