@@ -50,6 +50,8 @@ To get data with hash-conditioning, run all blocks in:
 
 `sibling-discovery/ntp/sibling.ipynb`
 
+Here is an example of what the data would look like: [sibling example](https://huggingface.co/datasets/ChenWu98/sibling.5.500.10.50000)
+
 To get data without hash-conditioning, run all blocks in:
 
 `sibling-discovery/ntp/sibling_no_hash.ipynb`
@@ -59,6 +61,8 @@ To get data without hash-conditioning, run all blocks in:
 To get data with hash-conditioning, run all blocks in:
 
 `triangle-discovery/ntp/triangle.ipynb`
+
+Here is an example of what the data would look like: [triangle example](https://huggingface.co/datasets/ChenWu98/triangle.10)
 
 To get data without hash-conditioning, run all blocks in:
 
@@ -70,11 +74,15 @@ To get both data with and without hash-conditioning, run all blocks in:
 
 `circle-construction/ntp/circle.ipynb`
 
+Here is an example of what the data would look like: [circle example](http://huggingface.co/datasets/ChenWu98/circle.10.9.10.10000)
+
 ### Line Construction
 
 To get both data with and without hash-conditioning, run all blocks in:
 
 `line-construction/ntp/line.ipynb`
+
+Here is an example of what the data would look like: [line example](https://huggingface.co/datasets/ChenWu98/line.10.9.10.10000)
 
 ## Training and evaluation
 
