@@ -1,0 +1,1 @@
+bash train.sh sibling_hybrid.5.500.10.50000 0.0 8 0
